@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="NestedMasterPage1.master.cs" Inherits="FYP.NestedMasterPage1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="headcontainer" runat="server">
+                <asp:ContentPlaceHolder id="head" runat="server">
+        
+            </asp:ContentPlaceHolder>
+    </asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+
+    <div class="col-sm-10">
+        <div class="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        </div>
+        </div>
+</asp:Content>
